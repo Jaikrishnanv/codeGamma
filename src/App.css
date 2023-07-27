@@ -1,66 +1,99 @@
-body {
-  font-family: Arial, sans-serif;
+body, ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
-header {
-  background-color: #10030300;
-  color: #cbc7c7;
+.header {
+  background-color: #333;
   padding: 10px;
-}
-
-nav {
+  color: #070101;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  margin-right: 20px;
-}
-
-nav a:last-child {
-  margin-right: 0;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  position: absolute;
-  bottom: 100;
-  width: 100%;
-  text-align: center;
-}
-
-.footer-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.footer-content p {
+.header h1 {
   margin: 0;
 }
 
-.product-card {
-  border: 1px solid #61f06b;
-  color: #61f06b;
-  background-color: rgb(26, 23, 23);
+.header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.product-list {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.product-item {
+  border: 1px solid #ddd;
   padding: 10px;
   margin-bottom: 10px;
-  margin-left: 40px;
-  margin-right: 40px;
-  transition: transform 0.3s ease;
+  transition: box-shadow 0.3s ease; /* Add hover transition */
 }
 
-.product-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 5px rgba(60, 237, 122, 0.3);
+.product-item:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add hover effect */
 }
 
-.product-card h2 {
-  margin-top: 5;
+.product-item h3 {
+  margin: 0;
+}
+
+.product-item p {
+  margin: 5px 0;
+}
+
+.product-item button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-item button:hover {
+  background-color: #45a049;
+}
+
+.cart {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cart-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.3s ease; /* Add hover transition */
+}
+
+.cart-item:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add hover effect */
+}
+
+.cart-item h3 {
+  margin: 0;
+}
+
+.cart-item button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart-item button:hover {
+  background-color: #d32f2f;
 }
